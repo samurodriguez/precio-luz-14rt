@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Precios de la Luz</title>
+    <!--Enlazamos el archivo JavaScript al Html-->
+    <script type="module" src="./js/main.js" defer></script>
+    <!--Enlazamos el archivo css al html-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <header>
+    <h1>Precios de la luz</h1>
+  </header>
+  <body>
+    <form class="search">
+      <label
+        >Elige el electrodoméstico del que quieres saber su precio de la
+        luz:</label
+      >
+      <select id="SelectDevices">
+        <option disabled value="default" selected>
+          Selecciona un electrodoméstico
+        </option>
+        <option value="Frigorífico">Frigorífico</option>
+        <option value="Congelador">Congelador</option>
+        <option value="Lavadora">Lavadora</option>
+        <option value="Lavavajilla">Lavavajilla</option>
+        <option value="Secador">Secador</option>
+        <option value="Televisor">Televisor</option>
+      </select>
+    </form>
+
+    <section class="device">
+      <section class="deviceDetails"></section>
+      <img class="devicePhoto"></img>
+    </section>
+
+    <section class="bwHours"></section>
+  </body>
+</html>
